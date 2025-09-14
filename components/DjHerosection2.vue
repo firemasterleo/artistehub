@@ -94,7 +94,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            filter: brightness(50%);
+            // filter: brightness(50%);
   
             // opacity: 0;
       transform: scale(1.05); /* tiny zoom for smoothness */
