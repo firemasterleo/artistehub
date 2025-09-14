@@ -246,7 +246,7 @@ p {
       }
       .newsletter {
         height: 13rem;
-        background-color: #EABF83;
+        background-color: #aeaead;
         display: flex;
         flex-direction: column;
         gap: 1rem;
