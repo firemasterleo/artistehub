@@ -4,11 +4,13 @@
 
     <main>
         
-        <!-- <BlogSection /> -->
-        <!-- <DjHerosection2 /> -->
         <Header />
-            <DjLatestRelease />
-            <Footer />  
+        <DjLatestRelease />
+        <Footer />
+
+
+  
+  
     </main>
   
   </template>
@@ -45,4 +47,3 @@
   });
   
   </script>
-  

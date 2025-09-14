@@ -18,13 +18,13 @@
     </div>
   </NuxtLink>
 
-  <NuxtLink to="/Latest Releases" exact-active-class="active">
+  <NuxtLink to="/LatestReleases" exact-active-class="active">
     <div class="home" @click="handleItemClick">  
       <p :class="{ 'is-expanded': isMenuOpen }">Latest Releases</p>
     </div>
   </NuxtLink>
 
-  <NuxtLink to="/UpcominEvents" exact-active-class="active">
+  <NuxtLink to="/UpcomingEvents" exact-active-class="active">
     <div class="home" @click="handleItemClick">  
       <p :class="{ 'is-expanded': isMenuOpen }">Upcoming Events</p>
     </div>
