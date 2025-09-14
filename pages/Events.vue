@@ -8,11 +8,8 @@
         <!-- <DjHerosection2 /> -->
         <!-- <DjLatestRelease /> -->
         <Header />
-        <div class="content">
             <DjShopNaarly />
             <Footer />
-
-        </div>
   
   
     </main>
@@ -52,10 +49,3 @@
   
   </script>
   
-  <style lang="scss" scoped>
-.main {
-    .content {
-        margin-top: -3.2rem;
-    }
-}
-</style>

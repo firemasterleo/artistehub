@@ -18,7 +18,7 @@
                 <NuxtLink to="/"><p>About us</p></NuxtLink>
               </div>
               <div class="nav-item">
-                <NuxtLink to="/VehicleMaintenance"><p>CNG</p></NuxtLink>
+                <NuxtLink to="/"><p>CNG</p></NuxtLink>
               </div>
               <div class="nav-item">
                 <NuxtLink to="/"><p>Blog</p></NuxtLink>

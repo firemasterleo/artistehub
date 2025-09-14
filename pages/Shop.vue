@@ -5,7 +5,7 @@
     <main>
         
         <Header />
-        <DjLatestRelease />
+        <DjShopNaarly />
         <Footer />
 
 

@@ -10,12 +10,12 @@
             <div class="slide">
                 <!--i deleted this to use later @mousemove="updateMousePosition" @mouseenter="showVideo" @mouseleave="hideVideo" -->
                 <div class="highlight" >
-                <router-link to="/">
+                <NuxtLink to="/">
                     
                     <div class="image">
                     <img src="https://res.cloudinary.com/dgdnews6i/image/upload/v1757838022/Screenshot_2025-09-13_094731_vgqtil.jpg" alt="">
                     </div>
-                </router-link>
+                </NuxtLink>
                     <div class="eventtext">
                     <h2>Aug 23, 2025</h2>
                     <h1>Naarly</h1>

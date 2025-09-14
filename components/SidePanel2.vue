@@ -12,30 +12,30 @@
 
               </div>
               <div class="menu">
-  <NuxtLink to="/" exact-active-class="active">
+  <NuxtLink to="/" active-class="active">
     <div class="home" @click="handleItemClick">  
       <p :class="{ 'is-expanded': isMenuOpen }">Home</p>
     </div>
   </NuxtLink>
 
-  <NuxtLink to="/LatestReleases" exact-active-class="active">
+  <NuxtLink to="/Latest" active-class="active">
     <div class="home" @click="handleItemClick">  
       <p :class="{ 'is-expanded': isMenuOpen }">Latest Releases</p>
     </div>
   </NuxtLink>
 
-  <NuxtLink to="/UpcomingEvents" exact-active-class="active">
+  <NuxtLink to="/Events" active-class="active">
     <div class="home" @click="handleItemClick">  
       <p :class="{ 'is-expanded': isMenuOpen }">Upcoming Events</p>
     </div>
   </NuxtLink>
 
-  <NuxtLink to="/Shop" exact-active-class="active">
+  <NuxtLink to="/Shop" active-class="active">
     <div class="home" @click="handleItemClick">  
       <p :class="{ 'is-expanded': isMenuOpen }">Shop</p>
     </div>
   </NuxtLink>
-  <NuxtLink to="/About" exact-active-class="active">
+  <NuxtLink to="/" active-class="active">
     <div class="home" @click="handleItemClick">  
       <p :class="{ 'is-expanded': isMenuOpen }">About</p>
     </div>
@@ -76,9 +76,9 @@ const handleItemClick = () => {
 
 .content {
   // border: solid green ;
-  height: 100vh;
-  overflow: hidden;
-  overflow-y: scroll;
+  // height: 100vh;
+  // overflow: hidden;
+  // overflow-y: scroll;
   
  
 
@@ -97,7 +97,7 @@ const handleItemClick = () => {
         // border: solid green;
         background-color: #101010;
         width: 100%;
-        height: 100dvh;
+        height: 100vh;
         // padding-inline: 1rem;
         outline: none; /* Remove the default outline */
         box-shadow: 0 0 0 0.1px ;   //remove outline and use box shadow for thinnest line 

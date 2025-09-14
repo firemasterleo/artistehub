@@ -48,7 +48,7 @@ watch(isMenuOpen, (newValue) => {
 });
 </script>
 
-  <style lang="scss">
+  <style lang="scss" scoped>
     @use "@/assets/sass/main" as *; // Import variables
     @use "@/assets/sass/variables" as *; // Import variables
 
@@ -140,23 +140,6 @@ background-color: #101010;
 }
 
       }
-    // .sidepanel-overlay {
-    //   width: 100vw;
-    //   height: 100vh;
-    //   background-color: rgba(0, 0, 0, 0.658);
-    //   position: fixed;
-    //   bottom: 0;
-    //   z-index: 10;
-    //   opacity: 0;
-    //   visibility: hidden;
-    //   transition: opacity 0.3s ease-out, visibility 0s linear 0.5s;
-  
-    //   &.is-expanded {
-    //     opacity: 1;
-    //     visibility: visible;
-    //     transition: opacity 0.3s ease-in;
-    //   }
-    // }
   }
 
   </style>

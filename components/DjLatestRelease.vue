@@ -16,50 +16,34 @@
                 <!-- <button>VIEW ALL RELEASES</button> -->
             </div>
             <div class="releases">
-                <!-- Placeholder for releases, you can replace these with actual data -->
-                <div class="release-item">
-                    <div class="image">
-                        <img src="https://res.cloudinary.com/dgdnews6i/image/upload/v1757838386/WhatsApp_Image_2025-09-08_at_3.00.19_PM_g4nohq.jpg" alt="CNG Conversion Hero Image" loading="lazy">
-                    </div>
-                    <h3>Release Title 1</h3>
-                    <p>Artist Name 1</p>
+                <div
+                    v-for="release in releases"
+                    :key="release.title"
+                    class="release-item"
+                    @click="openModal(release)"
+                    >
+                <div class="image">
+                    <img :src="release.image" :alt="release.title" loading="lazy" />
                 </div>
-                <div class="release-item">
-                    <div class="image">
-                        <img src="https://res.cloudinary.com/dgdnews6i/image/upload/v1757838029/marcel-strauss-1AR3gIIadzQ-unsplash_fw29ox.jpg" alt="CNG Conversion Hero Image" loading="lazy">
-                    </div>
-                    <h3>Release Title 1</h3>
-                    <p>Artist Name 1</p>
+                <h3>{{ release.title }}</h3>
+                <p>{{ release.artist }}</p>
                 </div>
-                <div class="release-item">
-                    <div class="image">
-                        <img src="https://res.cloudinary.com/dgdnews6i/image/upload/v1757838025/WhatsApp_Image_2025-09-01_at_9.21.47_AM_xpnguj.jpg" alt="CNG Conversion Hero Image" loading="lazy">
-                    </div>
-                    <h3>Release Title 1</h3>
-                    <p>Artist Name 1</p>
-                </div>
-                <div class="release-item">
-                    <div class="image">
-                        <img src="https://res.cloudinary.com/dgdnews6i/image/upload/v1757838024/hendo-wang-WEKKEg9j_YE-unsplash_v2miqu.jpg" alt="CNG Conversion Hero Image" loading="lazy">
-                    </div>
-                    <h3>Release Title 1</h3>
-                    <p>Artist Name 1</p>
-                </div>
-                <div class="release-item">
-                    <div class="image">
-                        <img src="https://res.cloudinary.com/dgdnews6i/image/upload/v1757839047/WhatsApp_Image_2025-09-04_at_2.27.55_PM_p4jpqv.jpg" alt="CNG Conversion Hero Image" loading="lazy">
-                    </div>
-                    <h3>Release Title 1</h3>
-                    <p>Artist Name 1</p>
-                </div>
-                <div class="release-item">
-                    <div class="image">
-                        <img src="https://res.cloudinary.com/dgdnews6i/image/upload/v1757839047/WhatsApp_Image_2025-09-04_at_3.24.28_AM_d97el4.jpg" alt="CNG Conversion Hero Image" loading="lazy">
-                    </div>
-                    <h3>Release Title 1</h3>
-                    <p>Artist Name 1</p>
-                </div>
-    
+
+                       <!-- Modal -->
+                       <transition name="fade">
+  <div v-if="selectedRelease" class="modal-container" @click.self="selectedRelease = null">
+    <div class="modal">
+      <button class="close-btn" @click="selectedRelease = null">×</button>
+      <img :src="selectedRelease.image" :alt="selectedRelease.title" />
+      <h2>{{ selectedRelease.title }}</h2>
+      <p>{{ selectedRelease.artist }}</p>
+      <p>{{ selectedRelease.description }}</p>
+      <small>Released: {{ new Date(selectedRelease.releaseDate).toLocaleDateString() }}</small>
+    </div>
+  </div>
+</transition>
+
+
             </div>
             <div class="button">
                 <p>View All Releases</p>
@@ -68,6 +52,20 @@
 
     </div>
     </template>
+
+<script setup>
+import releases from '/public/releases.json'
+
+import { ref } from 'vue'
+
+const selectedRelease = ref(null)
+
+function openModal(release) {
+  selectedRelease.value = release
+}
+</script>
+
+
     
     <style lang="scss" scoped>
   @use "@/assets/sass/variables" as *; // Import variables
@@ -82,6 +80,8 @@
         max-height: 50rem;
         display: flex;
         margin-inline: auto;
+        // background-image: url("https://www.transparenttextures.com/patterns/mirrored-squares.png");
+        overflow: hidden;
 
     
     }
@@ -93,7 +93,6 @@
             height: fit-content;
             max-height: fit-content;
             background-color: rgb(35, 21, 37);
-background-image: url("https://www.transparenttextures.com/patterns/mirrored-squares.png");
 // padding-inline: 1rem;
 // padding-top: 2rem;
 
@@ -187,7 +186,7 @@ background-image: url("https://www.transparenttextures.com/patterns/mirrored-squ
                     padding-bottom:5rem;
 
                     background-color: rgba(0, 0, 0, 0.249);
-                backdrop-filter: blur(10px);
+                // backdrop-filter: blur(10px); //was a bug for some reason
                 // border-radius: 1rem;
 
                     
@@ -201,7 +200,7 @@ background-image: url("https://www.transparenttextures.com/patterns/mirrored-squ
     
                         .image {
                             width: 100%;
-                            height: 42vw;
+                            height: 12rem;
                             border-radius: 0.5rem;
                             overflow: hidden;
 
@@ -226,6 +225,9 @@ background-image: url("https://www.transparenttextures.com/patterns/mirrored-squ
                             margin-top: -5px;
                             font-size: 14px;
                         }
+
+
+                        
                     }
                 }
                 .button {
@@ -259,6 +261,66 @@ background-image: url("https://www.transparenttextures.com/patterns/mirrored-squ
 
 
         }
+
+        /* Fade animation */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
+
+/* Modal overlay */
+.modal-container {
+  position: fixed;
+  top: 10rem;
+  left: 0;
+  width: 20rem;
+  height: 20rem;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  overflow: hidden;
+}
+
+/* Modal box */
+.modal {
+  background: #111;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  color: white;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  animation: pop 0.1s ease;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Close button */
+.close-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+}
+
+/* Pop effect */
+@keyframes pop {
+  from { transform: scale(0.95); opacity: 0.8; }
+  to { transform: scale(1); opacity: 1; }
+}
+
     }
     
     @media (max-width: 1250px) and (min-width: 800px) {
@@ -269,6 +331,3 @@ background-image: url("https://www.transparenttextures.com/patterns/mirrored-squ
     
     </style>
     
-    <script setup>
-    
-    </script>
