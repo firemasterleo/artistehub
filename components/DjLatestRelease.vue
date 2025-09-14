@@ -70,28 +70,13 @@ function openModal(release) {
     <style lang="scss" scoped>
   @use "@/assets/sass/variables" as *; // Import variables
     
-    .main-container {
-        // background: linear-gradient(to left, #7cae65, #ffffff);
-        // border: solid red;
-        // background-color: $primarycolorwhite;
-        width: 100vw;
-        max-width: 100rem;
-        height: 100vh;
-        max-height: 50rem;
-        display: flex;
-        margin-inline: auto;
-        // background-image: url("https://www.transparenttextures.com/patterns/mirrored-squares.png");
-        overflow: hidden;
 
-    
-    }
     @media (max-width: 800px) {
         .main-container {
             display: flex;
             flex-direction: column;
             // border: solid green;
             height: fit-content;
-            max-height: fit-content;
             background-color: rgb(35, 21, 37);
 // padding-inline: 1rem;
 // padding-top: 2rem;

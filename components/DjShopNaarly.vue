@@ -59,17 +59,7 @@
     <style lang="scss" scoped>
   @use "@/assets/sass/variables" as *; // Import variables
     
-    .main-container {
-        // background: linear-gradient(to left, #7cae65, #ffffff);
-        background: $primarycolorwhite;
-        width: 100vw;
-        max-width: 100rem;
-        // height: 100vh;
-        // max-height: 50rem;
 
-  
-    
-    }
     @media (max-width: 800px) {
       .main-container {
         display: flex;
