@@ -4,7 +4,6 @@
             <img src="../public/assets/naarly.jpeg" alt="CNG Conversion Hero Image" loading="lazy">
 
         </div>
-        <div class="bottom-overlay"></div>
         <div class="text">
           <h1>My LInks</h1>
 
@@ -109,14 +108,7 @@
     }
   }
         }
-        .botttom-overlay {
-            border: solid red;
-            width: 100vw;
-            height: 4rem;
-            position: absolute;
-            bottom: 0;
 
-        }
         .text {
           position: absolute;
           bottom: 0rem;
