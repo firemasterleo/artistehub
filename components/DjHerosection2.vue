@@ -76,6 +76,7 @@
     }
     @media (max-width: 800px) {
       .main-container {
+
         display: flex;
         flex-direction: column;
         height: calc(var(--vh) * 70); 
@@ -85,6 +86,7 @@
         // border: solid red;
         width: 100vw;
         position: relative;
+        overflow: hidden;
         .image {
           width: 100vw;
           // height: calc(var(--vh) * 75);   

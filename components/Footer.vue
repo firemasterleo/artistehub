@@ -28,56 +28,7 @@
             </form>
       </div>
       <div class="footer">
-        <div class="top-container">
-          <div class="about cont">
-            <h2>About Us</h2>
-            <ul>
-              <li>Who We Are</li>
-              <li>Our Team / Partners</li>
-              <li>History & Milestones</li>
-            </ul>
-          </div>
 
-          <div class="whatwedo cont">
-            <h2>What We Do</h2>
-            <ul>
-              <li>Programs</li>
-              <li>Impact and Stories</li>
-              <li>Case Studies</li>
-
-            </ul>
-          </div>
-
-          <div class="eventsandeews cont">
-            <h2>Events and News</h2>
-            <ul>
-              <li>Latest News</li>
-              <li>Upcoming Events</li>
-              <li>Media Resources</li>
-            </ul>
-          </div>
-
-          <div class="getinvolved cont">
-            <h2>Get Involved</h2>
-            <ul>
-              <li>Volunteer signup </li>
-              <li>Partner with us</li>
-              <li>Donate</li>
-
-            </ul>
-          </div>
-          <div class="footercontact cont">
-            <h2>Contact US</h2>
-            <ul>
-              <li>Aviralight collective Head Office <br>16 Danjuma Ave, Wuse 2 <br>FCT Abuja, Nigeria</li>
-              <li><a href="tel:+234704563567">+234 70 456 3567</a></li>
-              <li><a href="tel:+234704573367">+234 70 457 3367</a></li>
-              <li>email : info@aviralightcollective.com</li>
-
-            </ul>
-          </div>
-
-        </div>
         <div class="socials">
           <div class="facebook">
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 30 30">

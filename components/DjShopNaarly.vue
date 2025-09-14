@@ -13,7 +13,7 @@
                 <router-link to="/">
                     
                     <div class="image">
-                    <img src="../assets/shopitem1.jpg" alt="">
+                    <img src="https://res.cloudinary.com/dgdnews6i/image/upload/v1757838022/Screenshot_2025-09-13_094731_vgqtil.jpg" alt="">
                     </div>
                 </router-link>
                     <div class="eventtext">
@@ -30,7 +30,7 @@
                 <div class="highlight">
         <a href="https://topmoviesquad.netlify.app" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
         <div class="image">
-            <img src="../assets/shopitem2.png" alt="">
+            <img src="https://res.cloudinary.com/dgdnews6i/image/upload/v1757837893/ChatGPT_Image_Sep_13_2025_09_54_18_AM_gx5lsh.png" alt="">
         </div>
         <div class="eventtext">
             <h2>Aug 29, 2025</h2>

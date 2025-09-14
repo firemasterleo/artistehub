@@ -1,8 +1,8 @@
 <template>
   <div class="main-layout"> <!-- Main Layout Wrapper -->
-    <div class="header">
+    <!-- <div class="header">
       <Header/>
-    </div>
+    </div> -->
   
     <!-- Side Panel -->
     <div class="sidepanel" :class="{ 'is-expanded': isMenuOpen }">
@@ -77,61 +77,86 @@ watch(isMenuOpen, (newValue) => {
   
   @media (max-width: 800px) {
     .main {
-  margin-top: 3.2rem;
+  // margin-top: 3.2rem;
   // border: solid;
 }
 
 
-    .sidepanel {
+.sidepanel {
+  
+  // opacity: 0;
+  // visibility: hidden;
+  width: 100vw;
+  height: 0dvh;
+  // transform: translatey(-100%);
+  // padding-top: 6rem;
+  // padding-left: 1.5rem;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  overflow-y: hidden;
+  // z-index: 0;
+  position: fixed;
+  // top: 3rem;
+  z-index: 24;
+visibility: hidden;    
+background-color: #101010;
+  
+  // visibility: hidden;
+  // border: solid red;
+  transition: all 0.8s  cubic-bezier(0.95, 0.05, 0.2, 1);
 
-// opacity: 0;
-// visibility: hidden;
-// border: solid red;
-width: 21rem;
-height: 100vh;
-transform: translatex(-100%);
-// padding-top: 6rem;
-// padding-left: 1.5rem;
-// border-radius: 0.6rem;
-display: flex;
-flex-direction: column;
-gap: 1.2rem;
-overflow-y: hidden;
-// z-index: 0;
-position: fixed;
-// top: 3rem;
-z-index: 24;
-opacity: 0;
-transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1) ; 
-// visibility: hidden;
-// border: solid red;
+  
+  
+  &.is-expanded {
+    // transition: all 0.35s; 
+    transition: all 0.7s cubic-bezier(0.95, 0.05, 0.05, 1); 
+    // opacity: 1;
+    // transform: translatey(0%);
+    height: 100dvh;
+    visibility: visible;
+  }
 
+      }
 
-&.is-expanded {
-  // transition: all 0.35s; 
-  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1) ; 
+      .sidepanel-overlay {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.658);
+        position: fixed;
+        bottom: 0;
+        z-index: 10;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease-out, visibility 0s linear 0.5s; 
+                              
+        
+  &.is-expanded {
     opacity: 1;
-transform: translatex(0%);
+  visibility: visible;
+  transition: opacity 0.5s ease-in;
+                        
 }
 
-    }
-    .sidepanel-overlay {
-      width: 100vw;
-      height: 100vh;
-      background-color: rgba(0, 0, 0, 0.658);
-      position: fixed;
-      bottom: 0;
-      z-index: 10;
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.3s ease-out, visibility 0s linear 0.5s;
-  
-      &.is-expanded {
-        opacity: 1;
-        visibility: visible;
-        transition: opacity 0.3s ease-in;
       }
-    }
+    // .sidepanel-overlay {
+    //   width: 100vw;
+    //   height: 100vh;
+    //   background-color: rgba(0, 0, 0, 0.658);
+    //   position: fixed;
+    //   bottom: 0;
+    //   z-index: 10;
+    //   opacity: 0;
+    //   visibility: hidden;
+    //   transition: opacity 0.3s ease-out, visibility 0s linear 0.5s;
+  
+    //   &.is-expanded {
+    //     opacity: 1;
+    //     visibility: visible;
+    //     transition: opacity 0.3s ease-in;
+    //   }
+    // }
   }
 
   </style>

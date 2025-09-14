@@ -5,8 +5,7 @@
           <!-- Logo -->
           <NuxtLink to="/" class="logo" @click="handleItemClick">
             <!-- <img src="../assets/logoimage2.jpeg" alt=""> -->
-            <h1><span>CNG</span>Guard</h1>
-            
+            <h1>Naarly</h1>            
           </NuxtLink>
   
           <!-- Navigation Bar -->
@@ -38,8 +37,9 @@
         <div class="mobile-header">
           <!-- Logo -->
           <NuxtLink to="/" class="logo" @click="handleItemClick">
-            <img src="../assets/logo.png" alt="">
-      </NuxtLink>
+                <h1>Naarl_y</h1>
+
+          </NuxtLink>
         <div class="hamburger" :class="{ 'is-active': isMenuOpen }" @click="toggleMenu">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -86,151 +86,11 @@ onMounted(() => {
 <style lang="scss" scoped>
   @use "@/assets/sass/variables" as *; // Import variables
 
-.presection {
-    // background-color: rgb(45, 45, 49);
-    // border: yellow solid;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    
-    
-    
-    .section1 {
-    //   border: solid green;
-        // margin-inline: auto;
-        width: 80rem;
-        height: 100%;
-        // padding-inline: 1rem;
-        overflow: hidden;
-        display: flex;
-        position: relative;
-        // background-color: rgb(121, 140, 97); /* Solid black background */
-
-
-
-
-        .desktop-header {
-            
-
-            // border: solid red;
-            // width: 62rem;
-            width: 100%;
-            // background-color: rgba(255, 255, 255, 0.219); /* Solid black background */
-            
-
-            backdrop-filter: blur(100px);
-            height: 3.5rem;
-            // border-radius: 2rem;
-            padding-left: 1rem;
-            padding-right: 1rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            overflow: hidden;
-            -webkit-tap-highlight-color: transparent;
-            // position: relative;
-            
-            .logo {
-                // width: 5rem;
-                height: 2rem;
-                // position: fixed;
-                z-index: 10;
-                mix-blend-mode: darken;
-                color: rgb(36, 123, 36);
-
-                img {
-                  width: 100%;
-                  height: 100%;
-                }
-                
-                
-          
-                h1 {
-                    // color: rgb(36, 123, 36);
-                    font-size: 20px;
-                    color: rgb(104, 145, 215);
-                    span {
-                        font-weight: 600;
-                    color: rgb(36, 123, 36);
-
-                    }
-                }
-            }
-
-            .nav-bar {
-                // border: solid red;
-                // width: 100%;
-                display: flex;
-                justify-content: right;
-                
-
-                .nav-links {
-                    display: flex;
-                    gap: 3rem;
-                    // width: 30rem;
-                    min-width: fit-content;
-                    overflow: hidden;
-
-                    mix-blend-mode: difference;
-                    // color: $textcolorwhite;
-            top: 1.2rem;
-
-                    .nav-item {
-                        flex-shrink: 0;
-                        position: relative;
-                        // border : solid black;
-                        // padding-inline: 0.2rem;
-                        
-                        
-                        
-                        
-                        p {
-                            -webkit-tap-highlight-color: transparent;
-                            font-size: 12px;
-                            font-weight: 600;
-                            letter-spacing: 1px;
-                            font-family: "Poppins", serif;
-                            cursor: pointer;
-                            // color: $textcolorwhite;
-                            color: rgb(50, 48, 48);
-
-                            
-                            // border-bottom: solid 1.5px;
-                        }
-                        p:active {
-                            transform: scale(1.1);
-                        }
-                    }
-                }
-            }   
-            .header-button {
-                button {
-            background-color: rgb(186, 162, 56);
-            // background-color: rgb(36, 123, 36);
-            border-radius: 0.7rem;
-            border: none;
-            color: rgb(255, 255, 255);
-            font-size: 12px;
-            padding-inline: 1.5rem;
-            padding-block: 10px;
-
-
-                }
-            }       
-        }
-        .mobile-header {
-          display: none;
-        }
-    }
-}
 
 @media (max-width: 800px) {
     .presection {
-      position: fixed;
-      top: 0;
-      z-index: 1000;
-      border-bottom: 1px solid $line-grey;
+ 
+    //   border-bottom: 1px solid $line-grey;
         .section1 {
             width: 100%;
             .desktop-header {
@@ -246,16 +106,35 @@ onMounted(() => {
                 height: 3.2rem;
                 padding-left: 1rem;
                 // height: fit-content;
-                background-color: $primarycolorwhite;
+                background-color: rgb(20, 20, 20);
                 
                 // background-color: rgb(121, 140, 97); /* Solid black background */
                 position: relative;
+
+                .logo {
+                //   border: solid red;
+            width: fit-content;
+            height: auto;
+            
+
+            h1 {
+                font-size: 22px;
+                color: rgba(255, 255, 255, 0.712);
+                position: fixed;
+                z-index: 25;
+                top: 0.5rem;
+                left: 1rem;
+                mix-blend-mode: difference;
+            }
+            h1:active {
+                        transform: scale(1.1);
+                    }
+          }
+
                 .hamburger {
               -webkit-tap-highlight-color: transparent;
               
-              // border: solid red;
-              position: relative;
-              left: 0;
+            //   border: solid red;
               z-index: 25;
       
               display: flex;
@@ -265,19 +144,22 @@ onMounted(() => {
               background-color: none;
               align-items: flex-end;
               cursor: pointer;
-      
-              // width: 2.5rem;
-              padding-left:1rem ;
+              padding-left:4rem ;
               padding-right: 1.5rem;
-      
               height: 3rem;
+              position: fixed;
+                // top: 0.5rem;
+                right: 0rem;
+                mix-blend-mode: difference;
+                color: $textcolorwhite;
+      
       
       
               .bar {
                   width: 19px;
                   height: 2px;
                   // background-color: rgba(255, 255, 255, 0.413);
-                  background-color: $textcolorblack;
+                  background-color: $textcolorwhite;
                   // background-color: $textcolorblack;
       
       
@@ -304,26 +186,8 @@ onMounted(() => {
       
               }
       }
-                .logo {
-                  // border: solid;
-            width: 5rem;
-            height: auto;
 
-            img {
-              width: 100%;
-              height: 100%;
-            }
-          }
 
-          .right  {
-            display: flex;
-            gap: 1rem;
-            fill: $text-dark;
-            svg {
-              width: 20px;
-              height: 20px;
-            }
-          }
 
 
 

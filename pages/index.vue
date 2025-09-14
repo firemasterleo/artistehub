@@ -5,6 +5,7 @@
   <main>
     
     <!-- <BlogSection /> -->
+    <Header />
     <DjHerosection2 />
     <DjLatestRelease />
     <DjShopNaarly />

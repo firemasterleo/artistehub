@@ -26,35 +26,35 @@
                 </div>
                 <div class="release-item">
                     <div class="image">
-                        <img src="../assets/djimage2.jpg" alt="CNG Conversion Hero Image" loading="lazy">
+                        <img src="https://res.cloudinary.com/dgdnews6i/image/upload/v1757838029/marcel-strauss-1AR3gIIadzQ-unsplash_fw29ox.jpg" alt="CNG Conversion Hero Image" loading="lazy">
                     </div>
                     <h3>Release Title 1</h3>
                     <p>Artist Name 1</p>
                 </div>
                 <div class="release-item">
                     <div class="image">
-                        <!-- <img src="../assets/mmigneousimg.jpeg" alt="CNG Conversion Hero Image" loading="lazy"> -->
+                        <img src="https://res.cloudinary.com/dgdnews6i/image/upload/v1757838025/WhatsApp_Image_2025-09-01_at_9.21.47_AM_xpnguj.jpg" alt="CNG Conversion Hero Image" loading="lazy">
                     </div>
                     <h3>Release Title 1</h3>
                     <p>Artist Name 1</p>
                 </div>
                 <div class="release-item">
                     <div class="image">
-                        <!-- <img src="../assets/djimage4.jpg" alt="CNG Conversion Hero Image" loading="lazy"> -->
+                        <img src="https://res.cloudinary.com/dgdnews6i/image/upload/v1757838024/hendo-wang-WEKKEg9j_YE-unsplash_v2miqu.jpg" alt="CNG Conversion Hero Image" loading="lazy">
                     </div>
                     <h3>Release Title 1</h3>
                     <p>Artist Name 1</p>
                 </div>
                 <div class="release-item">
                     <div class="image">
-                        <!-- <img src="../assets/fvbricia.jpeg" alt="CNG Conversion Hero Image" loading="lazy"> -->
+                        <img src="https://res.cloudinary.com/dgdnews6i/image/upload/v1757839047/WhatsApp_Image_2025-09-04_at_2.27.55_PM_p4jpqv.jpg" alt="CNG Conversion Hero Image" loading="lazy">
                     </div>
                     <h3>Release Title 1</h3>
                     <p>Artist Name 1</p>
                 </div>
                 <div class="release-item">
                     <div class="image">
-                        <!-- <img src="../assets/naarly.jpeg" alt="CNG Conversion Hero Image" loading="lazy"> -->
+                        <img src="https://res.cloudinary.com/dgdnews6i/image/upload/v1757839047/WhatsApp_Image_2025-09-04_at_3.24.28_AM_d97el4.jpg" alt="CNG Conversion Hero Image" loading="lazy">
                     </div>
                     <h3>Release Title 1</h3>
                     <p>Artist Name 1</p>
@@ -147,6 +147,8 @@ background-image: url("https://www.transparenttextures.com/patterns/mirrored-squ
                     gap: 1.5rem;
                     background-color: rgba(0, 0, 0, 0.249);
                 backdrop-filter: blur(10px);
+                position: relative;
+                z-index: 0;
 
                     // border-radius: 1rem;
 
@@ -199,7 +201,7 @@ background-image: url("https://www.transparenttextures.com/patterns/mirrored-squ
     
                         .image {
                             width: 100%;
-                            height: 36vw;
+                            height: 42vw;
                             border-radius: 0.5rem;
                             overflow: hidden;
 
@@ -216,11 +218,13 @@ background-image: url("https://www.transparenttextures.com/patterns/mirrored-squ
                         h3 {
                             color: $textcolorwhite;
                             margin-top: 5px;
+                            font-size: 16px;
 
                         }
                         p {
                             color: $textcolorwhitedark;
                             margin-top: -5px;
+                            font-size: 14px;
                         }
                     }
                 }
