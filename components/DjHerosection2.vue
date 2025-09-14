@@ -94,7 +94,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            // filter: brightness(50%);
+            filter: brightness(50%);
   
             // opacity: 0;
       transform: scale(1.05); /* tiny zoom for smoothness */
@@ -113,7 +113,7 @@
           bottom: 0rem;
         //   border: solid red;
         //   left: 1rem;
-        padding-bottom: 2rem;
+        margin-bottom: 2rem;
           display: flex;
           flex-direction: column;
           gap: 0.5rem;
