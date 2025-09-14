@@ -205,25 +205,3 @@
     </style>
     
 
-    <script setup>
-import { onMounted, onBeforeUnmount } from "vue";
-
-onMounted(() => {
-  const setVh = () => {
-    const vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty("--vh", `${vh}px`);
-  };
-
-  // run once on mount
-  setVh();
-
-  // update on resize/orientation change
-  window.addEventListener("resize", setVh);
-
-  // cleanup
-  onBeforeUnmount(() => {
-    window.removeEventListener("resize", setVh);
-  });
-});
-</script>
-  
