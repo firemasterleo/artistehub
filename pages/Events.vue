@@ -8,7 +8,7 @@
         <!-- <DjHerosection2 /> -->
         <!-- <DjLatestRelease /> -->
         <Header />
-            <DjShopNaarly />
+            <DjEvents />
             <Footer />
   
   

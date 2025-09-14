@@ -7,7 +7,7 @@
         <!-- <BlogSection /> -->
         <!-- <DjHerosection2 /> -->
         <Header />
-            <!-- <DjLatestRelease /> -->
+            <DjLatestRelease />
             <Footer />  
     </main>
   
