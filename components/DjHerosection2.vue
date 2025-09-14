@@ -111,9 +111,9 @@
         .text {
           position: absolute;
           bottom: 0rem;
-        //   border: solid red;
+          border: solid red;
         //   left: 1rem;
-        margin-bottom: 2rem;
+        padding-bottom: 2rem;
           display: flex;
           flex-direction: column;
           gap: 0.5rem;
