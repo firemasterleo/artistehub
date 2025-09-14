@@ -81,7 +81,7 @@
         flex-direction: column;
         // height: calc(var(--vh) * 70); 
         // height: 70vh;
-        height: 40rem;
+        height: 35rem;
         // max-height: calc(var(--vh) * 70);
         // border: solid red;
         width: 100vw;
