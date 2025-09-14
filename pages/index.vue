@@ -6,7 +6,7 @@
     
     <!-- <BlogSection /> -->
     <Header />
-    <DjHerosection2 />
+    <!-- <DjHerosection2 /> -->
     <DjLatestRelease />
     <DjEvents />
     <DjShopNaarly />
