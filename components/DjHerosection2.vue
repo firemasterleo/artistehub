@@ -1,7 +1,7 @@
 <template>
     <div class="main-container">
         <div class="image">
-            <img src="../assets/naarly.jpeg" alt="CNG Conversion Hero Image" loading="lazy">
+            <img src="https://res.cloudinary.com/dgdnews6i/image/upload/v1757838386/WhatsApp_Image_2025-09-08_at_3.00.19_PM_g4nohq.jpg" alt="CNG Conversion Hero Image" loading="lazy">
 
         </div>
         <div class="bottom-overlay"></div>

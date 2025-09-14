@@ -19,14 +19,14 @@
                 <!-- Placeholder for releases, you can replace these with actual data -->
                 <div class="release-item">
                     <div class="image">
-                        <!-- <img src="../assets/naarly.jpeg" alt="CNG Conversion Hero Image" loading="lazy"> -->
+                        <img src="https://res.cloudinary.com/dgdnews6i/image/upload/v1757838386/WhatsApp_Image_2025-09-08_at_3.00.19_PM_g4nohq.jpg" alt="CNG Conversion Hero Image" loading="lazy">
                     </div>
                     <h3>Release Title 1</h3>
                     <p>Artist Name 1</p>
                 </div>
                 <div class="release-item">
                     <div class="image">
-                        <!-- <img src="../assets/djimage2.jpg" alt="CNG Conversion Hero Image" loading="lazy"> -->
+                        <img src="../assets/djimage2.jpg" alt="CNG Conversion Hero Image" loading="lazy">
                     </div>
                     <h3>Release Title 1</h3>
                     <p>Artist Name 1</p>
