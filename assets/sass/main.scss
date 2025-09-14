@@ -74,6 +74,11 @@ body.no-scroll {
 
 html, body {
   background: none;
+  background: #000; // or your site’s dark color
+  overflow-x: hidden; // prevents horizontal flashes
+
+
   // background: black;
   touch-action: manipulation;
+
 }
