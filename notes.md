@@ -1,0 +1,3 @@
+responsiveness
+understand how using width 80rem vs 100rem, affect the layout vs browser zoom, at 80 rem,  current-laptop width is perfect at 100% browser zoom,if we set width to 100rem because we want to include slightly bigger screens, then to get current computer laptop width perfect i have to get used to browser zoom at 80%. might get confusing but be sure to use    width: 100vw;
+        max-width: 100rem;, and always remember that your current laptop actual screen size fits 80rem at 100% browser zoom , 

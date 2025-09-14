@@ -1,0 +1,3 @@
+User-Agent: *
+Disallow:
+Sitemap: https://nuxtlaunchpad.netlify.app/sitemap.xml
