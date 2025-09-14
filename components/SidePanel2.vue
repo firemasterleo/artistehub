@@ -35,7 +35,7 @@
       <p :class="{ 'is-expanded': isMenuOpen }">Shop</p>
     </div>
   </NuxtLink>
-  <NuxtLink to="/" active-class="active">
+  <NuxtLink to="/About" active-class="active">
     <div class="home" @click="handleItemClick">  
       <p :class="{ 'is-expanded': isMenuOpen }">About</p>
     </div>
