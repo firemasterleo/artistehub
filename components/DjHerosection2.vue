@@ -66,7 +66,7 @@
     
     .main-container {
         // background: linear-gradient(to left, #7cae65, #ffffff);
-        background: $primarycolorwhite;
+        background: none;
         width: 100vw;
         max-width: 100rem;
         // height: 100vh;
@@ -79,9 +79,9 @@
 
         display: flex;
         flex-direction: column;
-        height: calc(var(--vh) * 70); 
+        // height: calc(var(--vh) * 70); 
         // height: 70vh;
-        // height: 40rem;
+        height: 40rem;
         // max-height: calc(var(--vh) * 70);
         // border: solid red;
         width: 100vw;
