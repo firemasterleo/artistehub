@@ -86,7 +86,7 @@
         width: 100%;
         position: relative;
         overflow: hidden;
-        background: none;
+        background: #000;
         .image {
           // height: calc(var(--vh) * 75);   
           height: 100%;
