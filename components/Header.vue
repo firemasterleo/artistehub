@@ -5,7 +5,7 @@
           <!-- Logo -->
           <NuxtLink to="/" class="logo" @click="handleItemClick">
             <!-- <img src="../assets/logoimage2.jpeg" alt=""> -->
-            <h1>Naarly</h1>            
+            <h1>Maarly</h1>            
           </NuxtLink>
   
           <!-- Navigation Bar -->
@@ -37,7 +37,7 @@
         <div class="mobile-header">
           <!-- Logo -->
           <NuxtLink to="/" class="logo" @click="handleItemClick">
-                <h1>Naarl_y</h1>
+                <h1>Maarl_y</h1>
 
           </NuxtLink>
         <div class="hamburger" :class="{ 'is-active': isMenuOpen }" @click="toggleMenu">

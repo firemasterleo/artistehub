@@ -25,7 +25,7 @@
                 </NuxtLink>
                     <div class="eventtext">
                     <h2>Aug 23, 2025</h2>
-                    <h1>Naarly</h1>
+                    <h1>Maarly</h1>
                     <h3>ibiza, Spain</h3>
                     <p>Ushuaia</p>
                 </div>
@@ -37,37 +37,37 @@
             <img src="https://res.cloudinary.com/dgdnews6i/image/upload/v1757838024/hendo-wang-WEKKEg9j_YE-unsplash_v2miqu.jpg" alt="CNG Conversion Hero Image">
         </div>
         <div class="eventtext">
-            <h2>Aug 29, 2025</h2>
-            <h1>CRANBERRIES</h1>
-            <h3>London, United Kingdom</h3>
-            <p>Pirlo </p>
+            <h2>Sep 14, 2025</h2>
+            <h1>Black Coffee</h1>
+            <h3>Mykonos, Greece</h3>
+            <p>Scorpios</p>
         </div>
         </div>
                 <div class="highlight">
                 <NuxtLink to="/">
                     
                     <div class="image">
-                        <!-- <img src="https://res.cloudinary.com/dgdnews6i/image/upload/v1757838029/marcel-strauss-1AR3gIIadzQ-unsplash_fw29ox.jpg" alt="CNG Conversion Hero Image" loading="lazy"> -->
+                        <img src="https://res.cloudinary.com/dgdnews6i/image/upload/v1757838029/marcel-strauss-1AR3gIIadzQ-unsplash_fw29ox.jpg" alt="CNG Conversion Hero Image" loading="lazy">
                 </div>
                 </NuxtLink>
                     <div class="eventtext">
-                    <h2>Aug 23, 2025</h2>
-                    <h1>Naarly</h1>
-                    <h3>ibiza, Spain</h3>
-                    <p>Ushuaia</p>
+                        <h2>Oct 05, 2025</h2>
+                        <h1>Peggy Gou</h1>
+                        <h3>Seoul, South Korea</h3>
+                        <p>Octagon</p>
                 </div>
   
     
                 </div>
                 <div class="highlight" > 
                 <div class="image">
-                    <!-- <img src="https://res.cloudinary.com/dgdnews6i/image/upload/v1757838029/marcel-strauss-1AR3gIIadzQ-unsplash_fw29ox.jpg" alt="CNG Conversion Hero Image" loading="lazy"> -->
+                    <img src="https://res.cloudinary.com/dgdnews6i/image/upload/v1757838029/marcel-strauss-1AR3gIIadzQ-unsplash_fw29ox.jpg" alt="CNG Conversion Hero Image" loading="lazy">
                 </div>
                 <div class="eventtext">
-                    <h2>Aug 23, 2025</h2>
-                    <h1>Naarly</h1>
-                    <h3>ibiza, Spain</h3>
-                    <p>Ushuaia</p>
+                    <h2>Nov 02, 2025</h2>
+                    <h1>Solomun</h1>
+                    <h3>Tulum, Mexico</h3>
+                    <p>Zamna Festival</p>
                 </div>
     
                 </div>
@@ -75,13 +75,13 @@
                 <div class="highlight">
                     
                     <div class="image">
-                        <!-- <img src="https://res.cloudinary.com/dgdnews6i/image/upload/v1757838029/marcel-strauss-1AR3gIIadzQ-unsplash_fw29ox.jpg" alt="CNG Conversion Hero Image" loading="lazy"> -->
+                        <img src="https://res.cloudinary.com/dgdnews6i/image/upload/v1757838029/marcel-strauss-1AR3gIIadzQ-unsplash_fw29ox.jpg" alt="CNG Conversion Hero Image" loading="lazy">
                     </div>
                     <div class="eventtext">
-                    <h2>Aug 23, 2025</h2>
-                    <h1>Naarly</h1>
-                    <h3>ibiza, Spain</h3>
-                    <p>Ushuaia</p>    
+                        <h2>Dec 20, 2025</h2>
+                        <h1>Charlotte de Witte</h1>
+                        <h3>Berlin, Germany</h3>
+                        <p>Berghain</p>  
                     </div>
 
                 </div>

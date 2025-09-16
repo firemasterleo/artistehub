@@ -11,7 +11,7 @@
       <div class="newsletter">
         <div>
           <h2>Stay Connected</h2>
-          <p>Get updates on our work and impact in rural communities</p>
+          <p>Get updates on our Latest Events</p>
 
         </div>
         <form name="newsletter" method="POST" data-netlify="true" @submit.prevent="handleSubmit">
@@ -67,7 +67,7 @@
             <li>Terms of Use</li>
 
           </ul>
-          <p> Copyright © 2025 Aviralight Collective 
+          <p>  © Maarly 2025 <span> • </span> All rights reserved
         </p>
 
         </div>
