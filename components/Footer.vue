@@ -68,6 +68,11 @@
 
           </ul>
           <p>  © Maarly 2025 <span> • </span> All rights reserved
+            <p>Web development by 
+          <a href="https://shapestationdesigns.com" target="_blank" rel="noopener noreferrer">
+            <span > ❤️ Shapestation Studio</span>
+          </a>
+        </p>  
         </p>
 
         </div>
@@ -447,6 +452,14 @@ p {
             font-size: 14px;
           }
         }
+        p {
+
+          span {
+  
+            color: $textcolorwhite;
+          }
+        }
+
 
       }
   
