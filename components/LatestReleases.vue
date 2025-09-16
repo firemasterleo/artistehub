@@ -19,8 +19,7 @@
                     <NuxtImg
                     :src="release.image"
                     :alt="release.title"
-                    sizes="sm:100vw md:50vw lg:300px"
-                    format="webp"
+                  
                     placeholder
                     class="blur-up"   
                     />                
@@ -54,19 +53,15 @@
     </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import releases from '/public/releases.json'
 
-const releases = ref([])
+import { ref } from 'vue'
+
 const selectedRelease = ref(null)
 
 function openModal(release) {
   selectedRelease.value = release
 }
-
-onMounted(async () => {
-  const res = await fetch('/releases.json') // ✅ runtime fetch from public/
-  releases.value = await res.json()
-})
 </script>
 
     
