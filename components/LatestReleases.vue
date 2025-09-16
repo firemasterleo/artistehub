@@ -23,7 +23,8 @@
                         height="800"
                     format="webp"
                     placeholder
-                    class="blur-up"
+                  placeholder-class="my-placeholder"
+                 class="blur-up"
 
                     />                
                 </div>
@@ -354,18 +355,14 @@ function openModal(release) {
         
     
     
-    .blur-up {
-  transition: filter 0.4s ease;
+    .my-placeholder {
+  filter: blur(120px);
+//   transform: scale(1.1);
 }
-
-.blur-up[data-nuxt-img-placeholder] {
-  filter: blur(50px);
-  transform: scale(1.05);
-}
-
-.blur-up:not([data-nuxt-img-placeholder]) {
+.blur-up:not(.my-placeholder) {
   filter: blur(0);
-  transform: scale(1);
+//   transform: scale(1);
+  transition: filter 0.4s ease, transform 0.4s ease;
 }
 
     </style>
