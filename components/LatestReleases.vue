@@ -359,7 +359,7 @@ function openModal(release) {
 }
 
 .blur-up[data-nuxt-img-placeholder] {
-  filter: blur(20px);
+  filter: blur(50px);
   transform: scale(1.05);
 }
 
