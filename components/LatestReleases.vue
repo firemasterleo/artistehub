@@ -158,7 +158,7 @@ function openModal(release) {
             flex-direction: column;
             // border: solid green;
             height: fit-content;
-            background-color: rgb(35, 21, 37);
+            background-color: rgb(70, 62, 70);
 // padding-inline: 1rem;
 // padding-top: 2rem;
 
