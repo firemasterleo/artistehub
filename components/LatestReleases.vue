@@ -361,7 +361,7 @@ function openModal(release) {
 /* Modal box */
 .modal {
     // border: solid ;
-  background: #111;
+  background: #2d2d2d;
   padding: 1.5rem;
   border-radius: 0.75rem;
 //   max-width: 500px;
@@ -381,7 +381,7 @@ function openModal(release) {
       img {
         width: 100%;
         height: 100%;
-        filter: brightness(20%);
+        filter: brightness(40%);
         // z-index: -1;
         object-fit: cover;
       }
