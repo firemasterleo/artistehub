@@ -2,42 +2,42 @@
     {
       "title": "Neon Skies",
       "artist": "DJ Solstice",
-      "image": "./assets/djimage1.jpg",
+      "image": "/assets/djimage1.jpg",
       "description": "A futuristic house track inspired by late-night city drives.",
       "date": "2024-11-12"
     },
     {
       "title": "Echoes of Dawn",
       "artist": "Luna Vibe",
-      "image": "./assets/djimage2.jpg",
+      "image": "/assets/djimage2.jpg",
       "description": "Chillwave beats that capture the serenity of early morning light.",
       "date": "2025-01-07"
     },
     {
       "title": "Bassline Mirage",
       "artist": "Kairo Pulse",
-      "image": "./assets/djimage3.jpg",
+      "image": "/assets/djimage3.jpg",
       "description": "An energetic blend of afro-house and trance rhythms.",
       "date": "2024-09-23"
     },
     {
       "title": "Velvet Shadows",
       "artist": "Noir Echo",
-      "image": "./assets/djimage4.jpg",
+      "image": "/assets/djimage4.jpg",
       "description": "Smooth deep house vibes layered with soulful vocals.",
       "date": "2025-02-14"
     },
     {
       "title": "Crystal Frequencies",
       "artist": "Aero Flux",
-      "image": "./assets/djimage5.jpg",
+      "image": "/assets/djimage5.jpg",
       "description": "Experimental electronic sounds designed for meditation and focus.",
       "date": "2024-12-05"
     },
     {
       "title": "Solar Drift",
       "artist": "Nova X",
-      "image": "./assets/djimage6.jpg",
+      "image": "/assets/djimage6.jpg",
       "description": "A high-energy EDM anthem for festivals and nightclubs.",
       "date": "2025-03-03"
     }
