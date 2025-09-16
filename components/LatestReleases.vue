@@ -34,12 +34,27 @@
   <div v-if="selectedRelease" class="modal-container" @click.self="selectedRelease = null">
     <div class="modal">
       <button class="close-btn" @click="selectedRelease = null">×</button>
-      <img :src="selectedRelease.image" :alt="selectedRelease.title" />
+      <NuxtImg
+            :src="selectedRelease.image"
+            :alt="selectedRelease.title"
+            width="1200"
+            height="800"
+            format="webp"
+            placeholder
+            />
       <h2>{{ selectedRelease.title }}</h2>
       <p>{{ selectedRelease.artist }}</p>
-      <p>{{ selectedRelease.description }}</p>
-      <small>Released: {{ new Date(selectedRelease.releaseDate).toLocaleDateString() }}</small>
-    </div>
+      <small>
+            Released: {{
+                new Date(selectedRelease.releaseDate).toLocaleDateString('en-GB', {
+                day: '2-digit',
+                month: 'short',
+                year: 'numeric'
+                })
+            }}
+            </small>   
+            <h1>See Story</h1>
+ </div>
   </div>
 </transition>
 
@@ -54,16 +69,25 @@
     </template>
 
 <script setup>
-import releases from '/public/releases.json'
-
-import { ref } from 'vue'
+import rawReleases from '/public/releases.json'
+import { ref, computed } from 'vue'
 
 const selectedRelease = ref(null)
+
+// Sort releases by releaseDate first (fall back to datePublished if missing)
+const releases = computed(() => {
+  return [...rawReleases].sort((a, b) => {
+    const dateA = new Date(a.releaseDate || a.datePublished)
+    const dateB = new Date(b.releaseDate || b.datePublished)
+    return dateB - dateA // newest first
+  })
+})
 
 function openModal(release) {
   selectedRelease.value = release
 }
 </script>
+
 
     
     <style lang="scss" scoped>
@@ -263,13 +287,15 @@ function openModal(release) {
   top: 10rem;
   left: 0;
   width: 20rem;
-  height: 20rem;
+  height: fit-content;
   background: rgba(0, 0, 0, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 999;
-  overflow: hidden;
+//   overflow: hidden;
+  animation: pop 0.5s ease;
+
 }
 
 /* Modal box */
@@ -279,26 +305,37 @@ function openModal(release) {
   border-radius: 0.75rem;
   max-width: 500px;
   width: 90%;
-  text-align: center;
+//   text-align: center;
   color: white;
   box-shadow: 0 8px 24px rgba(0,0,0,0.3);
-  animation: pop 0.1s ease;
 
   img {
     width: 100%;
     height: 100%;
   }
+  h1 {
+    border: solid ;
+    font-size: 22px;
+    margin-top: 1rem;
+    width: fit-content;
+    margin-inline: auto;
+    padding-inline: 0.5rem;
+  }
 }
 
 /* Close button */
 .close-btn {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.361);
   border: none;
+  border-radius: 10rem;
   color: white;
   font-size: 1.5rem;
   position: absolute;
-  top: 15px;
-  right: 20px;
+  top: 0;
+  right: -2rem;
+  height: 4rem;
+  width: 4rem;
+
   cursor: pointer;
 }
 
