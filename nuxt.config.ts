@@ -52,7 +52,13 @@ export default defineNuxtConfig({
     preload: true,
     preconnect: true
   },
-  
+  image: {
+    domains: ['res.cloudinary.com'], // allow remote images
+    // Or better: set provider explicitly
+    cloudinary: {
+      baseURL: 'https://res.cloudinary.com/dgdnews6i/image/upload/'
+    }
+  },
 
   nitro: {
     preset: 'netlify',
