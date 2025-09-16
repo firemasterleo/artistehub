@@ -71,7 +71,7 @@
         width: 100vw;
         position: relative;
         background-color: rgb(255, 254, 254);
-        background-image: url("https://www.transparenttextures.com/patterns/mirrored-squares.png");
+        // background-image: url("https://www.transparenttextures.com/patterns/mirrored-squares.png");
 
         // padding-top: 15rem;
 

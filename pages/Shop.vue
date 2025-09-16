@@ -4,7 +4,7 @@
 
     <main>
         
-        <Header />
+        <!-- <Header /> -->
         <DjShopNaarly />
         <Footer />
 

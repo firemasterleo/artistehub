@@ -1,8 +1,8 @@
 <template>
   <div class="main-layout"> <!-- Main Layout Wrapper -->
-    <!-- <div class="header">
+    <div class="header">
       <Header/>
-    </div> -->
+    </div>
   
     <!-- Side Panel -->
     <div class="sidepanel" :class="{ 'is-expanded': isMenuOpen }">
@@ -11,7 +11,7 @@
     </div>
     
     <!-- Overlay to close menu -->
-    <div class="sidepanel-overlay" :class="{ 'is-expanded': isMenuOpen }" @click="closeMenu"></div>
+    <!-- <div class="sidepanel-overlay" :class="{ 'is-expanded': isMenuOpen }" @click="closeMenu"></div> -->
 
     <!-- Main Content Area -->
      <main class="main">
@@ -49,7 +49,7 @@ watch(isMenuOpen, (newValue) => {
 </script>
 
   <style lang="scss" scoped>
-    @use "@/assets/sass/main" as *; // Import variables
+    // @use "@/assets/sass/main" as *; // Import variables
     @use "@/assets/sass/variables" as *; // Import variables
 
 
@@ -87,7 +87,7 @@ watch(isMenuOpen, (newValue) => {
   // opacity: 0;
   // visibility: hidden;
   width: 100vw;
-  height: 0dvh;
+  height: 0vh;
   // transform: translatey(-100%);
   // padding-top: 6rem;
   // padding-left: 1.5rem;
@@ -114,7 +114,7 @@ background-color: #101010;
     transition: all 0.7s cubic-bezier(0.95, 0.05, 0.05, 1); 
     // opacity: 1;
     // transform: translatey(0%);
-    height: 100dvh;
+    height: 100vh;
     visibility: visible;
   }
 

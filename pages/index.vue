@@ -5,10 +5,10 @@
   <main>
     
     <!-- <BlogSection /> -->
-    <Header />
+    <!-- <Header /> -->
     <DjHerosection2 />
-    <DjLatestRelease />
-    <DjEvents />
+    <LatestReleases />
+    <UpcomingEvents />
     <DjShopNaarly />
     <Footer />
 

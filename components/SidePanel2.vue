@@ -12,35 +12,35 @@
 
               </div>
               <div class="menu">
-  <NuxtLink to="/" active-class="active">
-    <div class="home" @click="handleItemClick">  
-      <p :class="{ 'is-expanded': isMenuOpen }">Home</p>
-    </div>
-  </NuxtLink>
+                <NuxtLink to="/" active-class="active">
+                  <div class="home" @click="handleItemClick">  
+                    <p :class="{ 'is-expanded': isMenuOpen }">Home</p>
+                  </div>
+                </NuxtLink>
 
-  <NuxtLink to="/Latest" active-class="active">
-    <div class="home" @click="handleItemClick">  
-      <p :class="{ 'is-expanded': isMenuOpen }">Latest Releases</p>
-    </div>
-  </NuxtLink>
+                <NuxtLink to="/Latest" active-class="active">
+                  <div class="home" @click="handleItemClick">  
+                    <p :class="{ 'is-expanded': isMenuOpen }">Latest Releases</p>
+                  </div>
+                </NuxtLink>
 
-  <NuxtLink to="/Events" active-class="active">
-    <div class="home" @click="handleItemClick">  
-      <p :class="{ 'is-expanded': isMenuOpen }">Upcoming Events</p>
-    </div>
-  </NuxtLink>
+                <NuxtLink to="/Events" active-class="active">
+                  <div class="home" @click="handleItemClick">  
+                    <p :class="{ 'is-expanded': isMenuOpen }">Upcoming Events</p>
+                  </div>
+                </NuxtLink>
 
-  <NuxtLink to="/Shop" active-class="active">
-    <div class="home" @click="handleItemClick">  
-      <p :class="{ 'is-expanded': isMenuOpen }">Shop</p>
-    </div>
-  </NuxtLink>
-  <NuxtLink to="/About" active-class="active">
-    <div class="home" @click="handleItemClick">  
-      <p :class="{ 'is-expanded': isMenuOpen }">About</p>
-    </div>
-  </NuxtLink>
-</div>
+                <NuxtLink to="/Shop" active-class="active">
+                  <div class="home" @click="handleItemClick">  
+                    <p :class="{ 'is-expanded': isMenuOpen }">Shop</p>
+                  </div>
+                </NuxtLink>
+                <NuxtLink to="/About" active-class="active">
+                  <div class="home" @click="handleItemClick">  
+                    <p :class="{ 'is-expanded': isMenuOpen }">About</p>
+                  </div>
+                </NuxtLink>
+              </div>
 
                     <div class="socials">
                       <p :class="{ 'is-expanded': isMenuOpen }">Instagram</p>
@@ -94,10 +94,10 @@ const handleItemClick = () => {
     .sidebarcontainer {
       -webkit-tap-highlight-color: transparent;
 
-        // border: solid green;
+        border: solid green;
         background-color: #101010;
         width: 100%;
-        height: 100vh;
+        height: 50rem;
         // padding-inline: 1rem;
         outline: none; /* Remove the default outline */
         box-shadow: 0 0 0 0.1px ;   //remove outline and use box shadow for thinnest line 
@@ -107,8 +107,8 @@ const handleItemClick = () => {
     .sidebarsection {
         // height: 50rem;
         width: 100%;
-        height: 100dvh;
-        // border: solid red;
+        height: 100%;
+        border: solid red;
         
         .sidebar {
           padding-top: 9rem;

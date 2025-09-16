@@ -52,6 +52,7 @@ export default defineNuxtConfig({
     preload: true,
     preconnect: true
   },
+  
 
   nitro: {
     preset: 'netlify',

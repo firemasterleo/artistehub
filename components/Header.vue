@@ -60,15 +60,13 @@
   </template>
   
   <script setup>
-  import { ref } from 'vue';
-  import { useToggle } from '@/composables/useToggle'
+import { ref, onMounted } from 'vue'
+import { useToggle } from '@/composables/useToggle'
   
   // Use the composable for managing toggle state
   const { isMenuOpen, toggleMenu, closeMenu } = useToggle();
   const isHydrated = ref(false);
 
-
-  const showMenu = ref(false);
   // Function to close the menu when clicking a menu item
   const handleItemClick = () => {
     closeMenu(); // Ensures the menu closes on click

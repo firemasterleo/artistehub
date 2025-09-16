@@ -6,8 +6,8 @@
         
         <!-- <BlogSection /> -->
         <!-- <DjHerosection2 /> -->
-        <Header />
-            <DjLatestRelease />
+        <!-- <Header /> -->
+        <DjShopNaarly />
             <Footer />  
     </main>
   
