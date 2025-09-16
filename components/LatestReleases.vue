@@ -22,9 +22,8 @@
                           width="1200"
                         height="800"
                     format="webp"
-                    placeholder
-                  placeholder-class="my-placeholder"
-                 class="blur-up"
+                    :placeholder="[80, 80, 60, 10]" 
+
 
                     />                
                 </div>
