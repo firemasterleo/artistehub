@@ -137,7 +137,7 @@
 
         // }
         .content {
-            background-color: rgba(57, 3, 57, 0.306);
+            background-color: rgba(57, 3, 57, 0.075);
             backdrop-filter: blur(20px);
             padding-top: 2rem;
             // border: solid red;

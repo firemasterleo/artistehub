@@ -375,7 +375,7 @@ function openModal(release) {
   .image {
     // width: 100%;
     // height: 50%;
-    aspect-ratio: 16 / 14;
+    aspect-ratio: 16 / 10;
     // position: absolute;
 
       img {
@@ -407,7 +407,7 @@ function openModal(release) {
     
   }
   .listen-on {
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-size: 1.5rem;
     color: $textcolorwhite;
     text-align: center;
@@ -425,12 +425,13 @@ function openModal(release) {
                 column-gap: 0.5rem;
                 row-gap: 0.5rem;
                 // padding-inline: 3rem;
-                padding-top: 2rem;
+                padding-top: 1rem;
 
 
                 .chanel {
                 //   width: 100%;
-                  height: 4.4rem;
+                //   height: 3rem;
+                  height: 10vw;
                   // border: solid $textcolorwhitedark 1px;
                   border-radius: 0.5rem;
                   background-color: rgba(255, 255, 255, 0.037);

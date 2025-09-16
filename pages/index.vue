@@ -8,8 +8,8 @@
     <Header />
     <DjHerosection2 />
     <LatestReleases />
-    <DjShopNaarly />
     <UpcomingEvents />
+    <DjShopNaarly />
     <Footer />
 
 
