@@ -19,7 +19,8 @@
                     <NuxtImg
                     :src="release.image"
                     :alt="release.title"
-                    sizes="300px"
+                          width="1200"
+                        height="800"
                     format="webp"
                     placeholder
                     class="blur-up"   
@@ -256,7 +257,7 @@ function openModal(release) {
 }
 
 .blur-up {
-  filter: blur(10px);
+  filter: blur(20px);
   transition: filter 0.3s ease;
 }
 .blur-up[data-nuxt-img-loaded] {
