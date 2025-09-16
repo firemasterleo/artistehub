@@ -22,8 +22,8 @@
                           width="1200"
                         height="800"
                     format="webp"
-                    :placeholder="[80, 80, 10, 130]" 
-                    placeholder-class="my-placeholder"
+                    :placeholder="[80, 80, 70, 20]" 
+                    placeholderClass="my-placeholder"
                  class="blur-up"
 
                     />                
@@ -353,17 +353,12 @@ function openModal(release) {
     @media (max-width: 1250px) and (min-width: 800px) {
     }
         
+//     .my-placeholder {
+//   filter: blur(20px);
+//    }
     
-    
-    .my-placeholder {
-  filter: blur(120px);
-//   transform: scale(1.1);
-}
-.blur-up:not(.my-placeholder) {
-  filter: blur(0);
-//   transform: scale(1);
-  transition: filter 0.4s ease, transform 0.4s ease;
-}
+
+
 
     </style>
     
