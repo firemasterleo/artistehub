@@ -15,8 +15,13 @@
                 <NuxtLink to="/">
                     
                     <div class="image">
-                        <img src="https://res.cloudinary.com/dgdnews6i/image/upload/v1757838029/marcel-strauss-1AR3gIIadzQ-unsplash_fw29ox.jpg" alt="CNG Conversion Hero Image">
-                    </div>
+                        <NuxtImg
+                        src="https://res.cloudinary.com/dgdnews6i/image/upload/v1757838029/marcel-strauss-1AR3gIIadzQ-unsplash_fw29ox.jpg"
+                        alt="CNG Conversion Hero Image"
+                        width="1200"
+                        height="800"
+                        format="webp"
+                        />                    </div>
                 </NuxtLink>
                     <div class="eventtext">
                     <h2>Aug 23, 2025</h2>
