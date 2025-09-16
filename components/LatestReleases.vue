@@ -23,7 +23,6 @@
                         height="800"
                     format="webp"
                     placeholder
-                    class="blur-up"   
                     />                
                 </div>
                 <h3>{{ release.title }}</h3>
@@ -256,13 +255,7 @@ function openModal(release) {
   opacity: 0;
 }
 
-.blur-up {
-  filter: blur(20px);
-  transition: filter 0.3s ease;
-}
-.blur-up[data-nuxt-img-loaded] {
-  filter: blur(0);
-}
+
 
 /* Modal overlay */
 .modal-container {
@@ -322,6 +315,7 @@ function openModal(release) {
         
     
     
-    
+
+
     </style>
     
