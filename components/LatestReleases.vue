@@ -19,7 +19,8 @@
                     <NuxtImg
                     :src="release.image"
                     :alt="release.title"
-                  
+                    sizes="300px"
+                    format="webp"
                     placeholder
                     class="blur-up"   
                     />                
