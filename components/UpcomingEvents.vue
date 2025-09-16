@@ -16,7 +16,7 @@
                     
                     <div class="image">
                         <NuxtImg
-                        src="v1757838029/marcel-strauss-1AR3gIIadzQ-unsplash_fw29ox.jpg"
+                        src="https://res.cloudinary.com/dgdnews6i/image/upload/v1757838029/marcel-strauss-1AR3gIIadzQ-unsplash_fw29ox.jpg"
                         alt="CNG Conversion Hero Image"
                         width="1200"
                         height="800"
