@@ -6,7 +6,7 @@
         
         <!-- <BlogSection /> -->
         <!-- <DjLatestRelease /> -->
-        <!-- <Header /> -->
+        <Header />
         <!-- <DjEvents /> -->
         <DjHerosection2 />
             <Footer />

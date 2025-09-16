@@ -5,7 +5,7 @@
   <main>
     
     <!-- <BlogSection /> -->
-    <!-- <Header /> -->
+    <Header />
     <DjHerosection2 />
     <LatestReleases />
     <UpcomingEvents />

@@ -1,8 +1,8 @@
 <template>
   <div class="main-layout"> <!-- Main Layout Wrapper -->
-    <div class="header">
+    <!-- <div class="header">
       <Header/>
-    </div>
+    </div> -->
   
     <!-- Side Panel -->
     <div class="sidepanel" :class="{ 'is-expanded': isMenuOpen }">

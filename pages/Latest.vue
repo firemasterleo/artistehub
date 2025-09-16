@@ -6,7 +6,7 @@
         
         <!-- <BlogSection /> -->
         <!-- <DjHerosection2 /> -->
-        <!-- <Header /> -->
+        <Header />
         <DjShopNaarly />
             <Footer />  
     </main>

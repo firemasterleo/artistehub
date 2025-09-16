@@ -94,10 +94,10 @@ const handleItemClick = () => {
     .sidebarcontainer {
       -webkit-tap-highlight-color: transparent;
 
-        border: solid green;
+        // border: solid green;
         background-color: #101010;
         width: 100%;
-        height: 50rem;
+        height: 100dvh;
         // padding-inline: 1rem;
         outline: none; /* Remove the default outline */
         box-shadow: 0 0 0 0.1px ;   //remove outline and use box shadow for thinnest line 
@@ -108,7 +108,7 @@ const handleItemClick = () => {
         // height: 50rem;
         width: 100%;
         height: 100%;
-        border: solid red;
+        // border: solid red;
         
         .sidebar {
           padding-top: 9rem;
