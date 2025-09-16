@@ -22,7 +22,7 @@
                           width="1200"
                         height="800"
                     format="webp"
-                    :placeholder="[80, 80, 60, 10]" 
+                    :placeholder="[80, 80, 60, 30]" 
 
 
                     />                
