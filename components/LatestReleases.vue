@@ -20,7 +20,7 @@
                     :src="release.image"
                     :alt="release.title"
                           width="1200"
-                        height="800"
+                        height="1200"
                     format="webp"
                     :placeholder="[80, 80, 70, 20]" 
                     placeholderClass="my-placeholder"
@@ -152,6 +152,344 @@ function openModal(release) {
   @use "@/assets/sass/variables" as *; // Import variables
     
 
+    @media (min-width: 801px) {
+      .main-container {
+        max-width: 100rem;
+        width: 100vw;
+        height: fit-content;
+        // max-height: 50rem;
+        overflow: hidden;
+
+        margin-inline: auto;
+        // border: solid red;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(25, 24, 25);
+    background-color: #101010;
+
+        position: relative;
+
+        .content {
+                //border: solid red;
+                width: 100%;
+                height: fit-content;
+                //backdrop-filter: blur(10px);
+                    border-radius: 1rem;
+                    position: relative;
+                    //padding-bottom: 2rem;
+
+                    .equalizer {
+                  // border: solid;
+                  position: absolute;
+                  top: 3rem;
+                  right: 2rem;
+
+                  .bars {
+                    display: flex;
+                    gap: 3px;
+                    align-items: flex-end;
+                    height: 30px;
+                    }
+                    .bars span {
+                    width: 20px;
+                    height: 100%;
+                    background: rgb(196, 193, 185);; /* green pulse */
+                    animation: pulse 1.2s infinite ease-in-out;
+                    }
+                    .bars span:nth-child(2) { animation-delay: 0.2s; }
+                    .bars span:nth-child(3) { animation-delay: 0.4s; }
+                    .bars span:nth-child(4) { animation-delay: 0.6s; }
+
+                    @keyframes pulse {
+                    0%, 100% { height: 20%; }
+                    50% { height: 100%; }
+                    }
+                }
+
+
+                .header {
+                    // border: solid red;
+                    height: fit-content;
+                    width: 100%;
+                    padding-left: 1rem;
+                    padding-block: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.5rem;
+                    background-color: rgba(0, 0, 0, 0.249);
+                backdrop-filter: blur(10px);
+                position: relative;
+                z-index: 0;
+
+                    // border-radius: 1rem;
+
+                        h1 {
+                        width: 50%;
+                        font-size: clamp(3rem, 4vw, 6em); /* Min 5rem, scales with viewport width, max 10em */
+                        color: $textcolorwhite;
+                        // border: solid red;
+    
+    
+                    }       
+                    p {
+                        font-size: 18px;
+                        color: $textcolorwhite;
+                        width: 90%;
+                        // border: solid red;
+                    }   
+                           
+
+                        // margin-bottom: 5rem;
+                   
+                  
+    
+                }
+                .releases {
+                    // border: solid red;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    row-gap: 2rem;
+                    // height: fit-content;
+                    // margin-top: 2rem;
+                    padding-inline: 1rem;
+                    padding-top: 2.5rem;
+                    padding-bottom:5rem;
+                    // width: 100vw;
+
+                    background-color: rgba(0, 0, 0, 0.249);
+                // backdrop-filter: blur(10px); //was a bug for some reason
+                // border-radius: 1rem;
+                padding-inline: 10rem;
+
+                    
+                    .release-item {
+                        height: fit-content;
+                        // border: solid blue;
+                        // width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        // gap: 10rem;
+                        overflow: hidden;
+                        padding-inline: 3rem;
+    
+                        .image {
+                            width: 100%;
+                            aspect-ratio: 16 / 12;
+                            // height: 12rem;
+                            border-radius: 0.5rem;
+                            overflow: hidden;
+
+    
+    
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                filter: brightness(60%);
+
+                            }
+                        }
+                        h3 {
+                            color: $textcolorwhite;
+                            margin-top: 5px;
+                            font-size: 16px;
+
+                        }
+                        p {
+                            color: $textcolorwhitedark;
+                            margin-top: -5px;
+                            font-size: 14px;
+                        }
+
+
+                        
+                    }
+                }
+                .button {
+                    color: $textcolorwhite;
+                    // border: solid white;
+                    width: 100%;
+                    margin-inline: auto;
+                    background-color: rgba(0, 0, 0, 0.249);
+                    backdrop-filter: blur(10px);
+                    padding-bottom: 4rem;
+
+                    p{
+                        
+                        // border: solid;
+                        margin-inline: auto;
+                        width: fit-content;
+                        // min-width: 30%;
+                        // max-height: 4rem;
+                        text-align: center;
+                        padding: 1rem;
+                        font-weight: 500;
+                        background-color: rgb(14, 71, 47);
+                        border-radius: 0.5rem;
+
+
+                    }
+
+
+
+                }
+            }
+      }
+
+
+      /* Modal overlay */
+.modal-container {
+  position: fixed;
+  top: 0rem;
+  left: 0;
+  width: 100vw;
+//   margin-inline: auto;
+
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.516);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+//   overflow: hidden;
+  animation: pop 0.5s ease;
+
+}
+
+/* Modal box */
+.modal {
+    // border: solid ;
+  background: #2d2d2d;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+//   max-width: 500px;
+  width: 30%;
+//   text-align: center;
+  color: $textcolorwhite;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  position: relative;
+  height: 80%;
+
+  .image {
+    // width: 100%;
+    // height: 50%;
+    aspect-ratio: 16 / 10;
+    // position: absolute;
+
+      img {
+        width: 100%;
+        height: 100%;
+        filter: brightness(40%);
+        // z-index: -1;
+        object-fit: cover;
+      }
+  }
+  .details {
+    position: absolute;
+    top: 4rem;
+    left: 3rem;
+    color: $textcolorwhite;
+
+    h2 {
+  color: $textcolorwhite;
+  
+  
+    }
+    p {
+        color: $textcolorwhitedark;
+    }
+
+
+
+
+    
+  }
+  .listen-on {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: $textcolorwhite;
+    text-align: center;
+  }
+
+
+  .chanels {
+                // border: solid red;
+                position: relative;
+                z-index: 1;
+                // width: 100%;
+                height: fit-content;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 0.5rem;
+                row-gap: 0.5rem;
+                // padding-inline: 3rem;
+                padding-top: 1rem;
+
+
+                .chanel {
+                //   width: 100%;
+                //   height: 3rem;
+                  height: 3rem;
+                  // border: solid $textcolorwhitedark 1px;
+                  border-radius: 0.5rem;
+                  background-color: rgba(255, 255, 255, 0.037);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  gap: 0.5rem;
+
+                  svg{
+                    fill: $textcolorwhite;
+                    width: 20px;
+                    height: 20px;
+                  }
+                  p {
+                    color: $textcolorwhite;
+                  }
+
+                }
+
+
+              }
+              h1 {
+    font-size: 22px;
+    background-color: rgba(215, 215, 215, 0.516);
+    color: $textcolorblack;
+    margin-top: 1rem;
+    width: fit-content;
+    margin-inline: auto;
+    padding-inline: 1rem;
+    padding-block: 0.2rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+  }
+  
+}
+
+/* Close button */
+.close-btn {
+  background: rgba(71, 66, 66, 0.361);
+  border: none;
+  border-radius: 10rem;
+  color: $textcolorwhite;
+  font-size: 1.5rem;
+  position: absolute;
+  top: -4rem;
+  right: 0.5rem;
+  height: 4rem;
+  width: 4rem;
+
+  cursor: pointer;
+}
+
+/* Pop effect */
+@keyframes pop {
+  from { transform: scale(0.95); opacity: 0.8; }
+  to { transform: scale(1); opacity: 1; }
+}
+      
+
+     }
     @media (max-width: 800px) {
         .main-container {
             display: flex;
@@ -327,17 +665,6 @@ function openModal(release) {
             }
 
 
-        }
-
-        /* Fade animation */
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 0.3s ease;
-}
-.fade-enter-from, .fade-leave-to {
-  opacity: 0;
-}
-
-
 
 /* Modal overlay */
 .modal-container {
@@ -489,6 +816,20 @@ function openModal(release) {
   from { transform: scale(0.95); opacity: 0.8; }
   to { transform: scale(1); opacity: 1; }
 }
+
+        }
+
+        /* Fade animation */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
+
+
+
+
 
     }
     

@@ -19,8 +19,9 @@
                         src="https://res.cloudinary.com/dgdnews6i/image/upload/v1757838029/marcel-strauss-1AR3gIIadzQ-unsplash_fw29ox.jpg"
                         alt="CNG Conversion Hero Image"
                         width="1200"
-                        height="800"
+                        height="1200"
                         format="webp"
+                        placeholder
                         />                    </div>
                 </NuxtLink>
                     <div class="eventtext">
@@ -99,18 +100,182 @@
     
     <style lang="scss" scoped>
   @use "@/assets/sass/variables" as *; // Import variables
-    
-    .main-container {
-        // background: linear-gradient(to left, #7cae65, #ffffff);
-        background: $primarycolorwhite;
-        width: 100vw;
-        max-width: 100rem;
-        // height: 100vh;
-        // max-height: 50rem;
 
-  
+  @media (min-width: 801px) {
+
+      .main-container {
+        max-width: 100rem;
+        height: fit-content;
+        // max-height: 50rem;
+        // overflow: hidden;
+        margin-inline: auto;
+        // border: solid red;
+        display: flex;
+        justify-content: center;
+        background-color:$primarycolorwhite;
+
+        position: relative;
+
+        .content {
+            background-color: rgba(57, 3, 57, 0.075);
+            backdrop-filter: blur(20px);
+            padding-top: 2rem;
+            // border: solid red;
+            width: 100%;
+
+            .text {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    // padding-block: 0.5rem;
+                    padding-inline: 1rem;
+                    padding-bottom: 1rem;
+                    gap: 1.5rem;
+                    // width: 70%;
+                    border: green;
+
+            //   padding-top: 15rem;
+
+            h1 {
+                // border: solid red;
+                        font-size: 4vw; /* Min 5rem, scales with viewport width, max 10em */
+                        // line-height: 2.8rem;
+                        // line-height: 12vw;
+                        color: $textcolorblack;
+                        width: 100%;
     
-    }
+    
+                    }       
+                    p {
+                        font-size: 16px;
+                        color: $textcolorblack;
+                        // width: 90%;
+                        // border: solid red;
+                    }  
+      
+
+                }
+
+      
+                .slide {
+                // height: 30rem;
+                //   border: solid red;
+                  width: 100%;
+                  height: fit-content;
+                  display: flex;
+                  flex-wrap: nowrap;
+                  gap: 0.7rem;
+                  overflow-x: auto;
+                  scroll-snap-type: x mandatory; /* Enables smooth snap scrolling */
+                  padding-inline: 1rem;
+                  padding-bottom: 5rem;
+
+      
+                  
+                  .highlight {
+                      flex-shrink: 0;
+                    //   border: solid blue;
+                    background-color: rgba(57, 3, 57, 0.082);
+                    // border-radius: 0.2rem;
+
+
+                    //   width: 19rem;
+                      width: 30%;
+                      height: fit-content;
+                      border-radius: 0.5rem;
+                      overflow: hidden;
+                      scroll-snap-align: center; /* Ensures items snap into place */
+                    //   -top: 1rem;
+                      
+      
+      
+                      .image {
+                          width: 100%;
+                          aspect-ratio: 16 / 12; // or 4/3, whatever matches your images
+
+                        //   height: 50vw;
+                        overflow: hidden;
+      
+                          img {
+                              width: 100%;
+                              height: 100%;
+                              object-fit: cover;
+                          }
+                      }
+                      .eventtext {
+                        // border: solid blue;
+                        // height: 30%;
+                        display: flex;
+                        flex-direction: column;
+                        // gap: 0.5rem;
+                        // background: rgba(0, 0, 0, 0.201);
+                        color: $textcolorblack;
+                        margin-top: 0px;
+                        padding-bottom: 2rem;
+                        padding-left: 0.5rem;
+                        // padding: 0.5rem;
+
+
+
+                        h2 {
+                            padding-top: 0.5rem;
+                            font-size: 1vw;
+                            margin-top: 0px;
+                            
+                        }
+                        h1 {
+                            font-size: 2vw;
+                            color: $textcolorblackdark;
+                            // margin-top: 0px;
+
+                            // position: absolute;
+
+                        }
+                        h3{
+                            font-size: 1vw;
+                            font-weight: 400;
+                        }
+                        p {
+                            // border: solid red;
+                            font-size: 1vw;
+                            margin-top: -5px;
+                        }
+                      }
+                  }
+                }
+
+                .button {
+                    // border: solid white;
+                    color: $textcolorwhite;
+                    width: 100%;
+                    margin-inline: auto;
+                    padding-bottom: 4rem;
+
+                    p{
+                        
+                        // border: solid red;
+                        margin-inline: auto;
+                        min-width: 30%;
+                        width: fit-content;
+                        text-align: center;
+
+                        font-size: 16;
+                        font-weight: 500;
+                        padding: 2vw;
+                        background-color: rgb(42, 46, 45);
+                        border-radius: 0.5rem;
+
+                    }
+
+
+
+                }
+        
+        }
+      
+      }
+   }
+    
     @media (max-width: 800px) {
       .main-container {
         display: flex;

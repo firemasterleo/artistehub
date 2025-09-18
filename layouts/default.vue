@@ -11,7 +11,7 @@
     </div>
     
     <!-- Overlay to close menu -->
-    <!-- <div class="sidepanel-overlay" :class="{ 'is-expanded': isMenuOpen }" @click="closeMenu"></div> -->
+    <div class="sidepanel-overlay" :class="{ 'is-expanded': isMenuOpen }" @click="closeMenu"></div>
 
     <!-- Main Content Area -->
      <main class="main">
@@ -59,20 +59,75 @@ watch(isMenuOpen, (newValue) => {
       z-index: 25;
     }
     .main-layout {
-      background-color: $primarycolorwhite;
+      // background-color: $primarycolorwhite;
 
     }
-.main {
+    @media (min-width: 801px) {
+    .main {
   // margin-top: 3.2rem;
-  // border: solid red;
-  background-color: $primarycolorwhite;
-
+  // border: solid;
 }
 
 
-  .sidepanel {
-    display: none;
+.sidepanel {
+  
+  // opacity: 0;
+  // visibility: hidden;
+  width: 60vw;
+  height: 100vh;
+  transform: translateX(-100%);
+  // padding-top: 6rem;
+  // padding-left: 1.5rem;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  overflow-y: hidden;
+  // z-index: 0;
+  position: fixed;
+  // top: 3rem;
+  z-index: 100;
+visibility: hidden;    
+background-color: #101010;
+  
+  // visibility: hidden;
+  // border: solid red;
+  transition: all 0.8s  cubic-bezier(0.95, 0.05, 0.2, 1);
 
+
+  
+  
+  &.is-expanded {
+    // transition: all 0.35s; 
+    transition: all 0.7s cubic-bezier(0.95, 0.05, 0.05, 1); 
+    // opacity: 1;
+    transform: translateX(0%);
+    // height: 100vh;
+    visibility: visible;
+  }
+
+      }
+
+      .sidepanel-overlay {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.658);
+        position: fixed;
+        bottom: 0;
+        z-index: 10;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease-out, visibility 0s linear 0.5s; 
+                              
+        
+  &.is-expanded {
+    opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease-in;
+                        
+}
+
+      }
   }
   
   @media (max-width: 800px) {
@@ -130,9 +185,10 @@ background-color: #101010;
         opacity: 0;
         visibility: hidden;
         transition: opacity 0.3s ease-out, visibility 0s linear 0.5s; 
-                              
         
-  &.is-expanded {
+        
+        &.is-expanded {
+    // border: solid red;
     opacity: 1;
   visibility: visible;
   transition: opacity 0.5s ease-in;

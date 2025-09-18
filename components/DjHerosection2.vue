@@ -1,8 +1,18 @@
 <template>
     <div class="main-container">
         <div class="image">
-            <img src="../public/assets/naarly.jpeg" alt="CNG Conversion Hero Image" loading="lazy">
+          <picture>
+  <!-- Desktop version (served for screens wider than 801px) -->
+  <source 
+    srcset="../public/assets/naarly-desktop2.png" 
+    media="(min-width: 801px)">
 
+  <!-- Mobile version (default fallback for smaller screens) -->
+  <img 
+    src="../public/assets/naarly.jpeg" 
+    alt="CNG Conversion Hero Image" 
+    loading="lazy">
+</picture>
         </div>
         <div class="text">
           <h1>My LInks</h1>
@@ -62,17 +72,126 @@
     
     <style lang="scss" scoped>
   @use "@/assets/sass/variables" as *; // Import variables
-    
+
+  @media (min-width: 801px) {
     .main-container {
-        // background: linear-gradient(to left, #7cae65, #ffffff);
-        // background: none;
-        // width: 100vw;
-        // max-width: 100rem;
-        // height: 100vh;
-        // max-height: 50rem;
-  
+      width: 100vw;
+        max-width: 100rem;
+        height: 100vh;
+        max-height: 50rem;
+        overflow: hidden;
+
+        margin-inline: auto;
+        // border: solid red;
+        display: flex;
+        justify-content: center;
+        background-color: #515050;
+        position: relative;
+        margin-top: -3.2rem;
+
     
+
+  .image {
+           // height: calc(var(--vh) * 75);   
+           height: 100%;
+           width: 100%;
+          //  border: solid red;
+           
+          //  margin-inline: auto;
+               img {
+            width: 100%;
+            height: auto;
+            // object-fit: cover;
+            filter: brightness(50%);
+            object-position: center ; /* shift image down */
+  
+            // opacity: 0;
+      transform: scale(1.05); /* tiny zoom for smoothness */
+      animation: fadeIn 1.5s ease-out forwards;
+          }
+          @keyframes fadeIn {
+    to {
+      // opacity: 1;
+      transform: scale(1);
     }
+  }
+  }
+  .text {
+          position: absolute;
+          top: 50%;          
+  transform: translateY(-35%);
+          // border: solid red;
+          right: 1rem;
+        padding-bottom: 2rem;
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          opacity: 0;
+      animation: text-fadeIn 1.5s ease-out forwards 0.2s;
+      background-color: rgba(0, 0, 0, 0);
+      backdrop-filter: blur(2px);
+      width: 40%;
+  
+  
+      @keyframes text-fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(-50%);
+    }
+  }
+  
+          h1 {
+            font-size: 26px;
+            color: $textcolorwhite;
+            font-weight:600;
+            text-align: center;
+          }
+
+          .chanels {
+                // border: solid red;
+                position: relative;
+                z-index: 1;
+                // width: 100%;
+                height: fit-content;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                column-gap: 0.5rem;
+                row-gap: 0.5rem;
+                padding-inline: 3rem;
+
+
+                .chanel {
+                //   width: 100%;
+                  height: 4.4rem;
+                  // border: solid $textcolorwhitedark 1px;
+                  border-radius: 0.5rem;
+                  background-color: rgba(255, 255, 255, 0.037);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  gap: 0.5rem;
+
+                  svg{
+                    fill: $textcolorwhite;
+                    width: 20px;
+                    height: 20px;
+                  }
+                  p {
+                    color: $textcolorwhite;
+                  }
+
+                }
+
+
+              }
+              
+  
+        }
+}
+
+    
+  }
+
     @media (max-width: 800px) {
       .main-container {
 

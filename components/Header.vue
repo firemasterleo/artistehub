@@ -1,40 +1,8 @@
 <template>
     <div class="presection">
       <div class="section1">
-        <div class="desktop-header">
-          <!-- Logo -->
-          <NuxtLink to="/" class="logo" @click="handleItemClick">
-            <!-- <img src="../assets/logoimage2.jpeg" alt=""> -->
-            <h1>Maarly</h1>            
-          </NuxtLink>
-  
-          <!-- Navigation Bar -->
-          <nav class="nav-bar">
-            <ul class="nav-links">
-              <div class="nav-item">
-                <NuxtLink to="/"><p>Home</p></NuxtLink>
-              </div>
-              <div class="nav-item">
-                <NuxtLink to="/"><p>About us</p></NuxtLink>
-              </div>
-              <div class="nav-item">
-                <NuxtLink to="/"><p>CNG</p></NuxtLink>
-              </div>
-              <div class="nav-item">
-                <NuxtLink to="/"><p>Blog</p></NuxtLink>
-              </div>
-              <div class="nav-item">
-                <NuxtLink to="/"><p>Contact Us</p></NuxtLink>
-              </div>
-            </ul>
-          </nav>
-          <div class="header-button">
-            <button>Book a Safe Conversion</button>
-            <!-- <button></button> -->
-          </div>
 
-        </div>
-        <div class="mobile-header">
+        <div class="header">
           <!-- Logo -->
           <NuxtLink to="/" class="logo" @click="handleItemClick">
                 <h1>Maarl_y</h1>
@@ -83,107 +51,103 @@ onMounted(() => {
 
 <style lang="scss" scoped>
   @use "@/assets/sass/variables" as *; // Import variables
-
-
-@media (max-width: 800px) {
-    .presection {
+  .presection {
+    
  
-    //   border-bottom: 1px solid $line-grey;
-        .section1 {
-            width: 100%;
-            .desktop-header {
-              display: none;
-            }
-            .mobile-header {
-                width: 100%;
-                // border: solid red;
+ //   border-bottom: 1px solid $line-grey;
+     .section1 {
+         width: 100%;
 
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                height: 3.2rem;
-                padding-left: 1rem;
-                // height: fit-content;
-                background-color: rgb(20, 20, 20);
-                
-                // background-color: rgb(121, 140, 97); /* Solid black background */
-                position: relative;
+         .header {
+             width: 100%;
+             // border: solid red;
 
-                .logo {
-                //   border: solid red;
-            width: fit-content;
-            height: auto;
-            
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             height: 3.2rem;
+             padding-left: 1rem;
+             // height: fit-content;
+             background-color: rgb(20, 20, 20);
+             
+             // background-color: rgb(121, 140, 97); /* Solid black background */
+             position: relative;
 
-            h1 {
-                font-size: 22px;
-                color: rgba(255, 255, 255, 0.712);
-                position: fixed;
-                z-index: 25;
-                top: 0.5rem;
-                left: 1rem;
-                mix-blend-mode: difference;
-            }
-            h1:active {
-                        transform: scale(1.1);
-                    }
-          }
+             .logo {
+             //   border: solid red;
+         width: fit-content;
+         height: auto;
+         
 
-                .hamburger {
-              -webkit-tap-highlight-color: transparent;
-              
-            //   border: solid red;
-              z-index: 25;
-      
-              display: flex;
-              flex-direction: column;
-              gap: 0.25rem;
-              justify-content: center;
-              background-color: none;
-              align-items: flex-end;
-              cursor: pointer;
-              padding-left:4rem ;
-              padding-right: 1.5rem;
-              height: 3rem;
-              position: fixed;
-                // top: 0.5rem;
-                right: 0rem;
-                mix-blend-mode: difference;
-                color: $textcolorwhite;
-      
-      
-      
-              .bar {
-                  width: 19px;
-                  height: 2px;
-                  // background-color: rgba(255, 255, 255, 0.413);
-                  background-color: $textcolorwhite;
-                  // background-color: $textcolorblack;
-      
-      
-                  transition: transform 0.3s, opacity 0.3s;
-                  
-                }
-              &.is-active {
-                  
-                  
-                  .bar:nth-child(1) {
-                      // background-color: rgba(255, 255, 255, 0.413);
-      
-                      transform: translateY(6px) rotate(45deg);
-                    }
-                  .bar:nth-child(2) {
-                      // background-color: rgba(255, 255, 255, 0.413);
-      
-                      opacity: 0; }
-                  .bar:nth-child(3) {
-                      // background-color: rgba(255, 255, 255, 0.413);
-      
-                      transform: translateY(-6px) rotate(-45deg);
-                  }
-      
-              }
-      }
+         h1 {
+             font-size: 22px;
+             color: rgba(255, 255, 255, 0.712);
+             position: fixed;
+             z-index: 25;
+             top: 0.5rem;
+             left: 1rem;
+             mix-blend-mode: difference;
+         }
+         h1:active {
+                     transform: scale(1.1);
+                 }
+       }
+
+             .hamburger {
+           -webkit-tap-highlight-color: transparent;
+           
+         //   border: solid red;
+           z-index: 25;
+   
+           display: flex;
+           flex-direction: column;
+           gap: 0.25rem;
+           justify-content: center;
+           background-color: none;
+           align-items: flex-end;
+           cursor: pointer;
+           padding-left:4rem ;
+           padding-right: 1.5rem;
+           height: 3rem;
+           position: fixed;
+             // top: 0.5rem;
+             right: 0rem;
+             mix-blend-mode: difference;
+             color: $textcolorwhite;
+   
+   
+   
+           .bar {
+               width: 19px;
+               height: 2px;
+               // background-color: rgba(255, 255, 255, 0.413);
+               background-color: $textcolorwhite;
+               // background-color: $textcolorblack;
+   
+   
+               transition: transform 0.3s, opacity 0.3s;
+               
+             }
+           &.is-active {
+               
+               
+               .bar:nth-child(1) {
+                   // background-color: rgba(255, 255, 255, 0.413);
+   
+                   transform: translateY(6px) rotate(45deg);
+                 }
+               .bar:nth-child(2) {
+                   // background-color: rgba(255, 255, 255, 0.413);
+   
+                   opacity: 0; }
+               .bar:nth-child(3) {
+                   // background-color: rgba(255, 255, 255, 0.413);
+   
+                   transform: translateY(-6px) rotate(-45deg);
+               }
+   
+           }
+   }
 
 
 
@@ -193,9 +157,13 @@ onMounted(() => {
 
 
 
-            }
-        }
-    }
+         }
+     }
+ }
+
+@media (min-width: 800px) {
+
+
 }
 
 </style>
