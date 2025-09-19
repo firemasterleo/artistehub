@@ -260,6 +260,7 @@ function openModal(release) {
                 // backdrop-filter: blur(10px); //was a bug for some reason
                 // border-radius: 1rem;
                 padding-inline: 10rem;
+                padding-inline: 10%;
 
                     
                     .release-item {
